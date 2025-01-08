@@ -6,39 +6,51 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
- }
- 
- 
- .card {
-    background-color: #fff;
+}
+
+.card {
+    background: linear-gradient(135deg, #eccbf5, #bfd8f5);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     width: 300px;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
+    color: white; /* Text color */
+    transition: transform 0.3s ease;
 }
-
-
-h1 {
-   font-size: 24px;
-   color: #333;
-}
-
-
-p {
-   font-size: 16px;
-   color: #555;
-}
-
-
-strong {
-   color: #333;
-}
-
 
 .card:hover {
-   transform: scale(1.05);
-   transition: transform 0.3s ease;
+    transform: scale(1.05);
 }
 
+.card img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Only one transition block */
+}
 
+.card img:hover {
+    transform: rotate(15deg);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333; /* Overrides white color for the name */
+}
+
+p {
+    font-size: 16px;
+    color: #555; /* Text color for paragraphs */
+}
+
+strong {
+    color: #333; /* For strong text */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
